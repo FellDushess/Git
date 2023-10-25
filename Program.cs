@@ -1,53 +1,78 @@
-﻿
-var numero1 = 5;
-var numero2 = 7;
-Console.WriteLine("Por favor, ingresa la suma de " + numero1 + " y " + numero2 + ": ");
-var respuesta = Console.ReadLine();
-var resultado = Convert.ToInt32(respuesta);
-var esCorrecto = resultado == (numero1 + numero2);
-Console.WriteLine("Tu respuesta es " + esCorrecto);
+﻿1 -
+var(valor1, valor2, valor3) = (true, true, false);
+Console.WriteLine(valor1 && valor2 && valor3);
+Console.WriteLine(valor1 || valor2 || valor3);
+bool resultOr = valor1 || valor2;
+Console.WriteLine(resultOr);
+bool resultAnd = valor1 && valor2;
+Console.WriteLine(resultAnd);
+bool resultNot = !valor1;
+Console.WriteLine(resultNot);
+bool resultXor = valor1 ^ valor2;
+Console.WriteLine(resultXor);
 
-///////////////////////////////////////////////////////////////////////////////////////////////
+2 -
+var(valor1, valor2, valor3) = (true, true, false);
+bool resultAnd = valor1 && valor2 && valor3;
+Console.WriteLine(resultAnd);
 
-var numero = 7;
-Console.WriteLine("Por favor, ingresa el doble de " + numero + ": ");
-var respuesta1 = Console.ReadLine();
-var resultado1 = Convert.ToInt32(respuesta1);
-var esCorrecto1 = resultado == (numero * 2);
-Console.WriteLine("Tu respuesta es " + esCorrecto1);
+bool resultOr = valor1 || valor2 || valor3;
+Console.WriteLine(resultOr);
 
-///////////////////////////////////////////////////////////////////////////////////////////////
+bool resultNot = !valor1;
+Console.WriteLine(resultNot);
 
-var numeroE = 42;
-Console.WriteLine("Por favor, ingresa el número " + numeroE + ": ");
-var respuestaE = Console.ReadLine();
-var numeroIngresadoE = Convert.ToInt32(respuestaE);
-var esCorrectoE = numeroIngresadoE == numeroE;
-Console.WriteLine("Tu respuesta es " + esCorrectoE);
+3 -
+bool valor1 = true;
+bool valor2 = false;
+bool valor3 = false;
 
-///////////////////////////////////////////////////////////////////////////////////////////////
+bool resultAnd = valor1 && valor2 && valor3;
+Console.WriteLine(resultAnd);
 
-var numeroA = 10;
+bool resultOr = valor1 || valor2 || valor3;
+Console.WriteLine(resultOr);
 
-Console.WriteLine("El valor inicial es " + numeroA);
+4 -
+bool valor1 = true;
+bool valor2 = false;
+bool valor3 = false;
 
-numeroA++;
+bool resultAnd = valor1 && valor2 && valor3;
+Console.WriteLine(resultAnd);
 
-Console.WriteLine("Después de incrementar, el valor es " + numeroA);
+bool resultOr = valor1 || valor2 || valor3;
+Console.WriteLine(resultOr);
 
-numeroA--;
+5 -
+bool valor1 = true;
+bool valor2 = false;
+bool valor3 = true;
 
-Console.WriteLine("Después de decrementar, el valor es " + numeroA);
+bool resultAnd = valor1 && valor2 && valor3;
+Console.WriteLine(resultAnd);
 
-///////////////////////////////////////////////////////////////////////////////////////////////
+bool resultOr = valor1 || valor2 || valor3;
+Console.WriteLine(resultOr);
 
-const double PI = 3.14159265359;
+bool resultNand = !(valor1 && valor2) && valor3;
+Console.WriteLine(resultNand);
 
-double radio = 5.0;
-double area = PI * radio * radio;
+6 -
+bool valor1 = true;
+bool valor2 = true;
+bool valor3 = true;
 
-Console.WriteLine("El valor de PI es constante: " + PI);
+bool resultAnd = valor1 && valor2 && valor3;
+Console.WriteLine(resultAnd);
 
-Console.WriteLine("Dado un radio de " + radio + " unidades,");
+bool resultOr = valor1 || valor2 || valor3;
+Console.WriteLine(resultOr);
 
-Console.WriteLine("El área de un círculo es: " + area + " unidades cuadradas.");
+7 -
+bool valor1 = true;
+bool valor2 = true;
+bool valor3 = true;
+
+bool result = valor1 && valor2;
+Console.WriteLine(result);
